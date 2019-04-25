@@ -1,13 +1,13 @@
 
 rm(list=ls(all=TRUE))
 
-setwd("/users/bhensley/Documents/Spectral/Spectrum")
+setwd("/users/bhensley/Documents")
 
 ###########################################################
 ###################### Input data #########################
 ###########################################################
 
-data<-read.csv("Mississippi - NO3.csv")
+data<-read.csv("data_file.csv")
 d<-data.frame(data)
 o<-d$DATA						
 
@@ -16,7 +16,7 @@ o<-d$DATA
 ###########################################################
 x<-spectrum(o,plot=FALSE)
 pwr<-x$spec
-freq<-x$freq*24	# muliply by samples / day
+freq<-x$freq*24	# muliply by samples / day (i.e. 96=15 min, 24=hourly, 1=daily)
 
 log.pwr<-log10(pwr)
 log.freq<-log10(freq)
