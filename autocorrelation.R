@@ -1,14 +1,14 @@
 
 rm(list=ls(all=TRUE))
 
-setwd("/users/bhensley/Documents/Spectral/Spectrum")
+setwd("/users/bhensley/Documents")
 
 
 ###########################################################
 ###################### Input data #########################
 ###########################################################
 
-data<-read.csv("Mississippi - NO3.csv")
+data<-read.csv("data_file.csv")
 d<-data.frame(data)
 t2<-d$DATE
 c1<-d$DATA						
