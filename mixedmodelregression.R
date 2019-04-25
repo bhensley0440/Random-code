@@ -2,7 +2,7 @@
 
 rm(list=ls(all=TRUE))
 
-setwd("/users/bhensley/Documents/Spectral/Spectrum")
+setwd("/users/bhensley/Documents")
 
 ###########################################################
 ###################### Input data #########################
